@@ -1,3 +1,7 @@
+import pgzrun
+
+# ... senin kodların burada başlıyor ...
+
 #pgzero
 import random
 
@@ -64,7 +68,7 @@ def draw():
         tree.draw()
         bulletsdraw()
         screen.draw.text("HP:", center=(30, 400), color="white", fontsize = 20)
-        screen.draw.text(treehealth, center=(62, 400), color="white", fontsize = 20)
+        screen.draw.text(str(treehealth), center=(62, 400), color="white", fontsize = 20)
     if mode == "pause":
         fon.draw()
         gg.draw()
@@ -72,7 +76,7 @@ def draw():
         play.draw()
         pause.draw()
         screen.draw.text("HP:", center=(30, 400), color="white", fontsize = 20)
-        screen.draw.text(treehealth, center=(62, 400), color="white", fontsize = 20)
+        screen.draw.text(str(treehealth), center=(62, 400), color="white", fontsize = 20)
 
     if mode == "lose":
         fon.image = "fo321nnn"
@@ -320,3 +324,5 @@ print(beebs)
 
         
     
+# KODUNUN EN SONUNA DA ŞUNU EKLE:
+pgzrun.go()
